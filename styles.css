@@ -1,0 +1,159 @@
+body, h1, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.folderContainer {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.folder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.folder input[type="text"] {
+    width: 70%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 28px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.createFolder {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 314px;
+}
+
+.createFolder:hover {
+    background-color: #0056b3;
+}
+
+.folderItem {
+    background-color: #f7f7f7;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.folderItem:hover {
+    background-color: #e0e0e0;
+}
+
+.folderItem.default {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.folderItem.active {
+    background-color: black;
+    color: white;
+}
+
+.taskName{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.taskContainer {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.taskHeader h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.addTasks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.addTasks input[type="text"],
+.addTasks input[type="date"],
+.addTasks button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.addTasks input[type="text"] {
+    width: 50%;
+}
+
+.addTasks input[type="date"] {
+    width: 30%;
+}
+
+.addTasks button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 182px;
+}
+
+.addTasks button:hover {
+    background-color: #0056b3;
+}
+
+.taskHolder {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taskHolder .finished {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.taskHolder .finished:hover {
+    background-color: #c9302c;
+}
